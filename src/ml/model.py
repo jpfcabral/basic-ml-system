@@ -27,6 +27,3 @@ class Net(nn.Module):
     def forward(self, x):
         return self.fc(self.cnn(x))
 
-net = Net()
-x = torch.randn((1, 1, 28, 28))
-print(net(x))
