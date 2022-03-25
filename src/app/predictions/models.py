@@ -11,3 +11,8 @@ class Prediction(SQLModel):
 
 class PredictionCreate(SQLModel):
     bs64_image: str
+
+
+class PredictionUpdate(SQLModel):
+    result: str
+    confidence: float
